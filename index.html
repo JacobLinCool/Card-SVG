@@ -1,0 +1,58 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>card-svg</title><meta name="description" content="Documentation for card-svg"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">card-svg</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>card-svg</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#card-svg" id="card-svg" style="color: inherit; text-decoration: none;">
+  <h1>Card SVG</h1>
+</a>
+<p>Create SVG Cards.</p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h2>Example</h2>
+</a>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Card</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&quot;card-svg&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">card</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Card</span><span class="hl-1">()</span><br/><span class="hl-1">    .</span><span class="hl-6">size</span><span class="hl-1">(</span><span class="hl-7">400</span><span class="hl-1">, </span><span class="hl-7">200</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-6">theme</span><span class="hl-1">(</span><span class="hl-3">&quot;nord&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">    .</span><span class="hl-6">background</span><span class="hl-1">()</span><br/><span class="hl-1">    .</span><span class="hl-6">text</span><span class="hl-1">(</span><span class="hl-3">&quot;JacobLinCool&quot;</span><span class="hl-1">, </span><span class="hl-3">&quot;text1&quot;</span><span class="hl-1">, { </span><span class="hl-2">x:</span><span class="hl-1"> </span><span class="hl-7">20</span><span class="hl-1">, </span><span class="hl-2">y:</span><span class="hl-1"> </span><span class="hl-7">30</span><span class="hl-1"> });</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">svg</span><span class="hl-1"> = </span><span class="hl-2">card</span><span class="hl-1">.</span><span class="hl-6">export</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+  <h2>API</h2>
+</a>
+
+<a href="#sizewidth-height" id="sizewidth-height" style="color: inherit; text-decoration: none;">
+  <h3>size(width, height)</h3>
+</a>
+<ul>
+<li>width: number</li>
+<li>height: number</li>
+</ul>
+
+<a href="#themename" id="themename" style="color: inherit; text-decoration: none;">
+  <h3>theme(name)</h3>
+</a>
+<ul>
+<li>name: string</li>
+</ul>
+<blockquote>
+<p>Themes: light, dark, nord</p>
+</blockquote>
+
+<a href="#textvalue-color_type--x-y-" id="textvalue-color_type--x-y-" style="color: inherit; text-decoration: none;">
+  <h3>text(value, color_type, { x, y })</h3>
+</a>
+
+<a href="#rectcolor_type--x-y-r-width-height-" id="rectcolor_type--x-y-r-width-height-" style="color: inherit; text-decoration: none;">
+  <h3>rect(color_type, { x, y, r, width, height })</h3>
+</a>
+
+<a href="#circlecolor_type--x-y-r-" id="circlecolor_type--x-y-r-" style="color: inherit; text-decoration: none;">
+  <h3>circle(color_type, { x, y, r })</h3>
+</a>
+
+<a href="#linecolor_type--x1-y1-x2-y2-r-weight-" id="linecolor_type--x1-y1-x2-y2-r-weight-" style="color: inherit; text-decoration: none;">
+  <h3>line(color_type, { x1, y1, x2, y2, r, weight })</h3>
+</a>
+
+<a href="#rawsvg--x-y-" id="rawsvg--x-y-" style="color: inherit; text-decoration: none;">
+  <h3>raw(svg, { x, y })</h3>
+</a>
+
+<a href="#export" id="export" style="color: inherit; text-decoration: none;">
+  <h3>export()</h3>
+</a>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-reference"><a href="modules.html#default" class="tsd-kind-icon">default</a></li><li class="tsd-kind-class"><a href="classes/Card.html" class="tsd-kind-icon">Card</a></li><li class="tsd-kind-class"><a href="classes/CircleElement.html" class="tsd-kind-icon">Circle<wbr/>Element</a></li><li class="tsd-kind-class"><a href="classes/LineElement.html" class="tsd-kind-icon">Line<wbr/>Element</a></li><li class="tsd-kind-class"><a href="classes/RawElement.html" class="tsd-kind-icon">Raw<wbr/>Element</a></li><li class="tsd-kind-class"><a href="classes/RectElement.html" class="tsd-kind-icon">Rect<wbr/>Element</a></li><li class="tsd-kind-class"><a href="classes/TextElement.html" class="tsd-kind-icon">Text<wbr/>Element</a></li><li class="tsd-kind-interface"><a href="interfaces/Colors.html" class="tsd-kind-icon">Colors</a></li><li class="tsd-kind-interface"><a href="interfaces/Element.html" class="tsd-kind-icon">Element</a></li><li class="tsd-kind-interface"><a href="interfaces/Theme.html" class="tsd-kind-icon">Theme</a></li><li class="tsd-kind-type-alias"><a href="modules.html#ElementType" class="tsd-kind-icon">Element<wbr/>Type</a></li><li class="tsd-kind-type-alias"><a href="modules.html#ThemeColor" class="tsd-kind-icon">Theme<wbr/>Color</a></li><li class="tsd-kind-type-alias"><a href="modules.html#ThemeName" class="tsd-kind-icon">Theme<wbr/>Name</a></li><li class="tsd-kind-variable"><a href="modules.html#dark" class="tsd-kind-icon">dark</a></li><li class="tsd-kind-variable"><a href="modules.html#light" class="tsd-kind-icon">light</a></li><li class="tsd-kind-variable"><a href="modules.html#nord" class="tsd-kind-icon">nord</a></li><li class="tsd-kind-function"><a href="modules.html#generate_css" class="tsd-kind-icon">generate_<wbr/>css</a></li><li class="tsd-kind-function"><a href="modules.html#merge" class="tsd-kind-icon">merge</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
